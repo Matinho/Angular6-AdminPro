@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 // Temporal - hay que sacarlo
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Rutas
 import { APP_ROUTES } from './app.routes';
@@ -12,6 +12,7 @@ import { PagesModule } from './pages/pages.module';
 
 // Services
 import { ServiceModule } from './services/service.module';
+import { HttpClientModule } from '@angular/common/http';
 
 // Componentes
 import { AppComponent } from './app.component';
@@ -28,7 +29,9 @@ import { RegisterComponent } from './login/register.component';
     BrowserModule,
     PagesModule,
     APP_ROUTES,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     ServiceModule
