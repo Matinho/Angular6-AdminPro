@@ -18,6 +18,8 @@ import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { ProfileComponent } from './profile/profile.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
 
 // Pipes
 import { PipesModule } from '../pipes/pipes.module';
@@ -40,6 +42,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         PromesasComponent,
         RxjsComponent,
         ProfileComponent,
+        UsuariosComponent,
+        ModalUploadComponent
     ],
     exports: [
         PagesComponent,

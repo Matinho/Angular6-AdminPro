@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common'; // esto tiene el ngIf, ngFor, etc
 import { HttpClientModule } from '@angular/common/http';
+import { ModalUploadService } from '../components/modal-upload/modal-upload.service';
 
 import {  SettingsService,
           SidebarService,
@@ -21,7 +22,8 @@ import {  SettingsService,
     SharedService,
     UsuarioService,
     SubirArchivoService,
-    LoginGuardGuard
+    LoginGuardGuard,
+    ModalUploadService
   ],
   declarations: []
 })
