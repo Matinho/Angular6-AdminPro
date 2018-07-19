@@ -33,7 +33,7 @@ export class UsuariosComponent implements OnInit {
   mostrarModal( id: string ) {
 
     this._modalUploadService.mostrarModal( 'usuarios', id );
-    
+
   }
 
   cargarUsuarios() {
@@ -54,7 +54,6 @@ export class UsuariosComponent implements OnInit {
   cambiarDesde( valor: number ) {
 
     const desde = this.desde + valor;
-    console.log( desde );
 
     if ( desde >= this.totalRegistros ) {
       return;

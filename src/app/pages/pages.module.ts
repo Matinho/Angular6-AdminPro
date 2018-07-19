@@ -29,6 +29,9 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { HospitalesComponent } from './hospitales/hospitales.component';
+import { MedicosComponent } from './medicos/medicos.component';
+import { MedicoComponent } from './medicos/medico.component';
 
 @NgModule({
     declarations: [
@@ -43,7 +46,10 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         RxjsComponent,
         ProfileComponent,
         UsuariosComponent,
-        ModalUploadComponent
+        ModalUploadComponent,
+        HospitalesComponent,
+        MedicosComponent,
+        MedicoComponent,
     ],
     exports: [
         PagesComponent,
