@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common'; // esto tiene el ngIf, ngFor, et
 import { HttpClientModule } from '@angular/common/http';
 import { ModalUploadService } from '../components/modal-upload/modal-upload.service';
 
-import {  SettingsService,
+import {
+          LoginGuardGuard,
+          AdminGuard,
+          SettingsService,
           SidebarService,
           SharedService,
           UsuarioService,
-          LoginGuardGuard,
           SubirArchivoService,
           HospitalService,
           MedicoService } from './service.index';
@@ -24,10 +26,11 @@ import {  SettingsService,
     SharedService,
     UsuarioService,
     SubirArchivoService,
-    LoginGuardGuard,
     ModalUploadService,
     HospitalService,
     MedicoService,
+    LoginGuardGuard,
+    AdminGuard,
   ],
   declarations: []
 })

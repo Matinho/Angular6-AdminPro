@@ -21,7 +21,6 @@ export class SubirArchivoService {
 
         if ( xhr.readyState === 4 ) { // solo me interesa cuando termina el proceso
           if ( xhr.status === 200 ) { // si el status es 200 estoy seguro que la imagen se subió
-            console.log('Imagen Subida');
             resolve( JSON.parse( xhr.response ) );
           } else {
             console.log('Falló la subida');
