@@ -8,7 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { APP_ROUTES } from './app.routes';
 
 // Modulos
-import { PagesModule } from './pages/pages.module';
+import { SharedModule } from './shared/shared.module';
 
 // Services
 import { ServiceModule } from './services/service.module';
@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+import { PagesComponent } from './pages/pages.component';
 
 
 @NgModule({
@@ -25,14 +26,15 @@ import { RegisterComponent } from './login/register.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
+    PagesComponent
   ],
   imports: [
     BrowserModule,
-    PagesModule,
     APP_ROUTES,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [
     ServiceModule

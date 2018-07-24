@@ -36,8 +36,8 @@
                     </div>
 
                 </div>
-
-                <div class="form-group" *ngIf="forma['errors']?.sonIguales && !forma.$pristine">
+                <!-- Cambiado $pristine por pristine  -->
+                <div class="form-group" *ngIf="forma['errors']?.sonIguales && !forma.pristine">
                     <p class="text-danger">
                         Las contraseñas deben ser iguales
                     </p>
